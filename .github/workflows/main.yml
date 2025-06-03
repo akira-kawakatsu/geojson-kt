@@ -37,6 +37,7 @@ jobs:
         with:
           report_paths: |
             **/build/test-results/test/TEST-*.xml
+          annotate_only: true
 
       - name: Create coverage report
         if: ${{ github.event.pull_request }}
